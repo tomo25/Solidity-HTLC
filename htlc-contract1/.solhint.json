@@ -1,0 +1,12 @@
+{
+    "extends": "solhint:recommended",
+    "plugins": [],
+    "rules": {
+      "max-line-length": 150,
+      "compiler-version": "off",
+      "mark-callable-contracts": "off",
+      "no-inline-assembly": "off",
+      "max-states-count": "off",
+      "compiler-fixed": "off"
+    }
+}

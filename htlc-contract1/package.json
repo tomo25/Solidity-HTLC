@@ -1,0 +1,38 @@
+{
+  "name": "htlc-contract1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tomo25/Solidity-HTLC.git",
+  "author": "tomo25 <bruiser4l.617@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "openzeppelin-solidity": "2.3.0",
+    "truffle": "5.0.31",
+    "web3": "^1.2.1"
+  },
+  "scripts": {
+    "lint": "yarn lint:sol && yarn lint:js",
+    "lint:sol": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
+    "lint:js": "eslint test/**",
+    "deploy": "rm -rf build && truffle migrate --network ganache"
+  },
+  "engines": {
+    "node": ">=10.16.0 <11.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-mocha-no-only": "^1.1.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "ethers": "^4.0.37",
+    "ganache-cli": "^6.7.0",
+    "http-server": "^0.11.1",
+    "solhint": "2.1.1",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
